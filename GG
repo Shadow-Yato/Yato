@@ -1,0 +1,37 @@
+/**********************
+* Автор: Михайлов Д.А.*
+* Дата: 21.09.26      *
+* Название: Вариант 5 *
+**********************/
+
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  // Блок 1: Объявление констант
+  const double SIDE_LENGTH = 3.52;
+  const double HEIGHT = 1.27;
+  const double WALL_THICKNESS = 0.150;
+  const double INITIAL_DRAFT = 0.635;
+  const double HATCH_DIAMETER = 0.036;
+  const double FLOW_COEFFICIENT = 0.82;
+  const double GRAVITY = 9.81;
+  const double PI = 3.1415926535;
+
+  // Блок 2: Вычисления
+  double outerArea = SIDE_LENGTH * SIDE_LENGTH;
+  double innerArea = (SIDE_LENGTH - 2.0 * WALL_THICKNESS) * (SIDE_LENGTH - 2.0 * WALL_THICKNESS);
+  double hatchArea = PI * HATCH_DIAMETER * HATCH_DIAMETER / 4.0;
+
+  double coefficientK = sqrt(INITIAL_DRAFT - WALL_THICKNESS) - sqrt(HEIGHT - WALL_THICKNESS - (HEIGHT - INITIAL_DRAFT) * (outerArea / innerArea));
+
+  double timeToFlood = (2.0 * coefficientK * outerArea * innerArea) / (FLOW_COEFFICIENT * hatchArea * sqrt(2.0 * GRAVITY) * (outerArea - innerArea));
+
+  // Блок 3: Вывод результатов
+  cout « "Time to flood: " « timeToFlood « " seconds" « endl;
+
+  return 0;
+}
