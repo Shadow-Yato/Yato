@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Perl 5: Скотч для вашего интернета!!! — Верблюжья мастерская</title>
+<meta name="description" content="Верблюжья мастерская: 21 день, чтобы склеить интернет на Perl. Авторизованный тренинг O'Reilly & Associates.">
+<style type="text/css">
+body {
+  background-color: #C0C0C0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14pt;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid #000000;
+}
+td {
+  border: 1px solid #808080;
+  padding: 4px 6px;
+}
+hr {
+  border: 2px solid #000000;
+  margin: 6px 0;
+}
+.camel-art {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+  line-height: 1.0;
+  color: #8B4513;
+  background-color: #FFF8DC;
+  border: 2px dashed #8B4513;
+  padding: 8px;
+  display: inline-block;
+}
+.section-header {
+  background-color: #000080;
+  color: #FFFFFF;
+  font-family: Impact, Arial Black, Arial;
+  font-size: 18pt;
+  padding: 4px 8px;
+}
+.highlight-box {
+  background-color: #FFFFCC;
+  border: 2px solid #000000;
+  padding: 6px;
+}
+.warning-box {
+  background-color: #FFE4B5;
+  border: 2px dashed #FF8C00;
+  padding: 6px;
+}
+.cta-button {
+  background-color: #008000;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  border: 3px outset #00FF00;
+  padding: 8px 16px;
+  text-align: center;
+}
+.nav-button {
+  background-color: #4169E1;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  border: 2px outset #87CEEB;
+  padding: 4px 8px;
+}
+.visitor-counter {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12pt;
+  background-color: #000000;
+  color: #00FF00;
+  border: 2px inset #808080;
+  padding: 4px 8px;
+  display: inline-block;
+}
+</style>
+</head>
+
+<body text="#000000" link="#0000FF" vlink="#551A8B" alink="#FF0000">
+
+<!-- Шапка -->
+<table width="100%" cellpadding="4" cellspacing="0" border="1" bgcolor="#000080">
+<tr>
+<td align="center">
+<font face="Impact, Arial Black, Arial" size="7" color="#FFFFFF"><b>Perl 5</b></font>
+<font face="Times New Roman, Times, serif" size="5" color="#FFFFFF">: Скотч для вашего интернета!!!</font>
+</td>
+</tr>
+<tr>
+<td align="center">
+<font face="Arial, Helvetica, sans-serif" size="2" color="#C0C0C0">
+Авторизованный тренинг O'Reilly & Associates &nbsp;|&nbsp; Верблюжья мастерская
+</font>
+</td>
+</tr>
+</table>
+
+<!-- Навигация -->
+<table width="100%" cellpadding="4" cellspacing="0" border="1" bgcolor="#808080">
+<tr>
+<td align="center">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>
+<a href="#why" class="nav-button">Почему Perl?</a> &nbsp;
+<a href="#program" class="nav-button">Программа</a> &nbsp;
+<a href="#testimonial" class="nav-button">Отзывы</a> &nbsp;
+<a href="#cta" class="nav-button">Запись</a>
+</b>
+</font>
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- Hero -->
+<table width="100%" cellpadding="8" cellspacing="0" border="1">
+<tr>
+<td align="center" bgcolor="#FFFFCC">
+<font face="Times New Roman, Times, serif" size="4">
+Добро пожаловать в <b>Верблюжью мастерскую</b> — курсы для системных администраторов и веб-мастеров, которые учат решать на Perl 5 задачи, с которыми «каждый день сталкиваешься, но shell не тянет».
+</font>
+<br><br>
+<font face="Arial, Helvetica, sans-serif" size="3">
+<b>21 день</b> — и ты склеиваешь интернет на Perl.
+</font>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFF8DC">
+<div class="camel-art">
+<pre>
+    _
+   | |
+   | |   __ _ _ __   __ _  ___  ___
+   | |  / _` | '_ \ / _` |/ _ \/ __|
+   | | | (_| | | | | (_| |  __/\__ \
+   |_|  \__,_|_| |_|\__, |\___||___/
+                     __/ |
+                    |___/
+</pre>
+</div>
+<br>
+<font face="Arial, Helvetica, sans-serif" size="2" color="#8B4513">
+<b>Верблюд O'Reilly</b> — символ Perl с 1991 года
+</font>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<!-- Почему Perl -->
+<a name="why"></a>
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr>
+<td class="section-header" colspan="2">Почему Perl?</td>
+</tr>
+<tr>
+<td colspan="2">
+<font face="Times New Roman, Times, serif" size="3">
+Твоя программа на C ещё компилируется пять минут. Твой shell-скрипт ломается на вложенных кавычках. Perl не компилируется, не ломается и не заставляет тебя работать сверхурочно.
+</font>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Регулярные выражения — часть языка.</b><br>
+m//, s///, $1, именованные захваты — всё встроено. Не нужно подключать библиотеки и разбираться в документации.
+</font>
+</td>
+<td width="50%" valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Однострочники.</b><br>
+Одна строка в терминале — и ты уже заменил данные во всех файлах. Perl создан для обработки текста: логи, конфиги, отчёты.
+</font>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>CPAN.</b><br>
+Тысячи готовых модулей: работа с текстом, базами данных, сетью. Не нужно изобретать велосипед — скорее всего, модуль уже написан.
+</font>
+</td>
+<td width="50%" valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Скорость разработки.</b><br>
+Текстовые задачи решаются быстрее, чем на многих других языках. Perl не требует академической строгости — он даёт результат.
+</font>
+</td>
+</tr>
+</table>
+
+<!-- Для кого -->
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr>
+<td bgcolor="#808080">
+<font face="Arial, Helvetica, sans-serif" size="3"><b>Для кого эти курсы:</b></font>
+</td>
+</tr>
+<tr>
+<td>
+<font face="Times New Roman, Times, serif" size="3">
+<b>Системные администраторы</b> — обработка логов, массовое переименование, мониторинг процессов вместо громоздких shell-скриптов.<br>
+<b>Веб-мастера</b> — CGI-скрипты, формы, гостевые книги, счётчики посещений. Оживи свой сайт без переписывания всего на C.<br>
+<b>Технические специалисты</b> — слышали, что «Perl — клейкая лента интернета», но не знают, с чего начать.
+</font>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<!-- Программа -->
+<a name="program"></a>
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr>
+<td class="section-header" colspan="2">Чему вы научитесь</td>
+</tr>
+<tr>
+<td colspan="2">
+<font face="Times New Roman, Times, serif" size="3">
+За 21 день ты пройдёшь путь от первых регулярных выражений до полноценных CGI-скриптов.
+</font>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Неделя 1–2:</b><br>
+Писать регулярные выражения любой сложности: lookahead, lookbehind, именованные группы.<br><br>
+Разбирать логи, конфиги и текстовые файлы.
+</font>
+</td>
+<td width="50%" valign="top">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Неделя 3–4:</b><br>
+Использовать -ne, -pe, -i для обработки потоков и файлов на месте.<br><br>
+Подключать модули CPAN и не изобретать велосипед.
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Формат:</b> 21 день, практические задания, разбор кода. Итоговый проект: парсер логов или CGI-скрипт для твоего сайта.
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="warning-box">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Предупреждение:</b> После курса твой код на Perl смогут прочитать только ты и, возможно, Ларри Уолл. Мы научим тебя писать регулярные выражения, которые выглядят как случайный набор символов, и однострочники, от которых плачут коллеги. Но результат важнее красоты — а Perl даёт результат. Если ты всё ещё хочешь писать красиво — это не тот язык. Если хочешь быстро — welcome to the workshop.
+</font>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<!-- Отзыв -->
+<a name="testimonial"></a>
+<table width="100%" cellpadding="6" cellspacing="0" border="1">
+<tr>
+<td class="highlight-box">
+<font face="Times New Roman, Times, serif" size="3">
+<i>«После курса я написал парсер логов на Perl за вечер. Раньше на это уходил целый день на shell»,</i> — <b>Алексей</b>, системный администратор.
+</font>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<!-- CTA -->
+<a name="cta"></a>
+<table width="100%" cellpadding="8" cellspacing="0" border="1">
+<tr>
+<td align="center" bgcolor="#000080">
+<font face="Impact, Arial Black, Arial" size="5" color="#FFFFFF">Запишись сейчас</font>
+</td>
+</tr>
+<tr>
+<td align="center">
+<font face="Times New Roman, Times, serif" size="3">
+И получи в подарок шпаргалку <b>«50 Perl-однострочников для логов и конфигов»</b>!
+</font>
+<br><br>
+<font face="Arial, Helvetica, sans-serif" size="2">
+Это не просто шпаргалка. Это 50 готовых команд, которые можно скопировать, вставить в терминал и сразу получить результат: фильтрация логов, замена во всех файлах, извлечение email'ов, разбор конфигов и многое другое.
+</font>
+<br><br>
+<div class="cta-button">
+<font face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF">
+<b>ЗАПИСАТЬСЯ НА КУРС</b>
+</font>
+</div>
+<br><br>
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Старт нового потока — скоро. Количество мест ограничено.</b>
+</font>
+<br><br>
+<font face="Arial, Helvetica, sans-serif" size="2">
+<b>Верблюжья мастерская</b> &nbsp;|&nbsp; Авторизованный тренинг O'Reilly & Associates
+</font>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<!-- Подвал -->
+<table width="100%" cellpadding="4" cellspacing="0" border="1" bgcolor="#808080">
+<tr>
+<td align="center">
+<font face="Arial, Helvetica, sans-serif" size="1">
+Best viewed in Netscape Navigator 3.0 &nbsp;|&nbsp; 800x600 &nbsp;|&nbsp; 256 colors
+</font>
+</td>
+</tr>
+<tr>
+<td align="center">
+<font face="Arial, Helvetica, sans-serif" size="1">
+<b>CGI-BIN</b> &nbsp;|&nbsp; <b>PERL support</b> &nbsp;|&nbsp; <b>script</b> &nbsp;|&nbsp; <b>hack</b> &nbsp;|&nbsp; <b>quick</b> &nbsp;|&nbsp; <b>powerful</b> &nbsp;|&nbsp; <b>flexible</b>
+</font>
+</td>
+</tr>
+<tr>
+<td align="center">
+<div class="visitor-counter">
+Ты посетитель № 0001337
+</div>
+</td>
+</tr>
+<tr>
+<td align="center">
+<font face="Arial, Helvetica, sans-serif" size="1">
+<i>«Тебе не обязательно становиться Ларри Уоллом. Достаточно быть ленивее его — и пользоваться языком, который он написал.»</i>
+</font>
+</td>
+</tr>
+<tr>
+<td align="center">
+<font face="Arial, Helvetica, sans-serif" size="1">
+© 1998 Верблюжья мастерская. Все права защищены.
+</font>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
