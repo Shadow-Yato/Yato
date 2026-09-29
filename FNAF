@@ -1,0 +1,52 @@
+/**********************
+* Михайлов Даниил     *
+* Линейные алгоритмы  *
+* вариант 5           *
+**********************/
+
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double side_length, height, wall_thickness, initial_draft, hatch_diameter, flow_coefficient, gravity, pi;
+
+    cout << "side_length = ";
+    cin >> side_length;
+
+    cout << "height = ";
+    cin >> height;
+
+    cout << "wall_thickness = ";
+    cin >> wall_thickness;
+
+    cout << "initial_draft = ";
+    cin >> initial_draft;
+
+    cout << "hatch_diameter = ";
+    cin >> hatch_diameter;
+
+    cout << "flow_coefficient = ";
+    cin >> flow_coefficient;
+
+    cout << "gravity = ";
+    cin >> gravity;
+
+    pi = 3.1415926535;
+
+    double outer_area, inner_area, hatch_area, coefficient_k, time_to_flood;
+
+    outer_area = side_length * side_length;
+    inner_area = (side_length - 2.0 * wall_thickness) * (side_length - 2.0 * wall_thickness);
+    hatch_area = pi * hatch_diameter * hatch_diameter / 4.0;
+
+    coefficient_k = sqrt(initial_draft - wall_thickness) - sqrt(height - wall_thickness - (height - initial_draft) * (outer_area / inner_area));
+
+    time_to_flood = (2.0 * coefficient_k * outer_area * inner_area) / (flow_coefficient * hatch_area * sqrt(2.0 * gravity) * (outer_area - inner_area));
+
+    cout << "Time to flood = " << time_to_flood << " seconds" << endl;
+
+    return 0;
+}
