@@ -35,17 +35,17 @@ int main() {
 
     pi = 3.1415926535;
 
-    double outerArea, innerArea, hatchArea, coefficientK, timeToFlood;
+    double outer_Area, inner_Area, hatch_Area, coefficient_K, time_To_Flood;
 
-    outerArea = sideLength * sideLength;
-    innerArea = (sideLength - 2.0 * wallThickness) * (sideLength - 2.0 * wallThickness);
-    hatchArea = pi * hatchDiameter * hatchDiameter / 4.0;
+    outer_Area = sideLength * sideLength;
+    inner_Area = (sideLength - 2.0 * wallThickness) * (sideLength - 2.0 * wallThickness);
+    hatch_Area = pi * hatchDiameter * hatchDiameter / 4.0;
 
-    coefficientK = sqrt(initialDraft - wallThickness) - sqrt(height - wallThickness - (height - initialDraft) * (outerArea / innerArea));
+    coefficient_K = sqrt(initialDraft - wallThickness) - sqrt(height - wallThickness - (height - initialDraft) * (outer_Area / inner_Area));
 
-    timeToFlood = (2.0 * coefficientK * outerArea * innerArea) / (flowCoefficient * hatchArea * sqrt(2.0 * gravity) * (outerArea - innerArea));
+    time_To_Flood = (2.0 * coefficientK * outer_Area * inner_Area) / (flowCoefficient * hatchArea * sqrt(2.0 * gravity) * (outer_Area - inner_Area));
 
-    cout << "Time to flood = " << timeToFlood << " seconds" << endl;
+    cout << "Time to flood = " << time_To_Flood << " seconds" << endl;
 
     return 0;
 }
