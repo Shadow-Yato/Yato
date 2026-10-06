@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double h0 = 0.05;
+    double V10 = 7.5;
+    
+    double denom = log(10.0 / h0) * log(10.0 / h0);
+    
+    cout << "h\tV" << endl;
+    
+    // Цикл с предусловием
+    double h = 2;
+    while (h <= 10) {
+        double V = V10 * log(h / h0) * log(h / h0) / denom;
+        cout << h << "\t" << V << endl;
+        h = h + 2;
+    }
+    
+    // Цикл с постусловием
+    h = 30;
+    do {
+        double V = V10 * log(h / h0) * log(h / h0) / denom;
+        cout << h << "\t" << V << endl;
+        h = h + 20;
+    } while (h <= 90);
+    
+    return 0;
+}
